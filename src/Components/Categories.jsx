@@ -32,7 +32,7 @@ const Categories = () => {
 
   return (
     <div className="flex flex-wrap gap-3 justify-center mt-2">
-      <button
+      <button 
         onClick={() => dispatch(setCategory("All"))}
         className={`p-1 px-5 rounded-2xl border-2 border-blue-950 ${
           selectedCategory === "All" && "bg-gray-300 text-white"

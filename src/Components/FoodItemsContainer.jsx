@@ -39,7 +39,6 @@ const FoodItemsContainer = ({ person, setperson }) => {
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const currentItems = filteredFoodData.slice(indexOfFirstItem, indexOfLastItem);
-
   const totalPages = Math.ceil(filteredFoodData.length / itemsPerPage);
 
   const handleNextPage = () => {
